@@ -1,5 +1,2 @@
 #!/bin/bash
-if[stat -c "%u" hello = guillaume]
-then
-	chown betty hello
-fi
+[stat -c "%u" hello = guillaume] && chown betty hello
